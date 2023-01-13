@@ -1,6 +1,6 @@
 {
   "name": "changelog_git",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Teste de implementação do changelog.",
   "main": "index.js",
   "scripts": {
