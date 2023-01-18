@@ -1,16 +1,26 @@
+// .versionrc
 {
-    "types": [
-      {"type": "feat", "section": "Funcionalidades"},
-        {"type": "fix", "section": "Errors Corrigidos"},
-        {"type": "chore", "hidden": true},
-        {"type": "docs", "hidden": true},
-        {"type": "style", "hidden": true},
-        {"type": "refactor", "hidden": true},
-        {"type": "perf", "section": "Melhorias de Performance"},
-        {"type": "test", "hidden": true}
-    ],
-    "commitUrlFormat": "https://github.com/mokkapps/changelog-generator-demo/commits/{{hash}}",
-    "compareUrlFormat": "https://github.com/mokkapps/changelog-generator-demo/compare/{{previousTag}}...{{currentTag}}"
+  "header": "What ever you want at the top of your changelog",
+  "types": [
+      {"type": "chore", "section":"Build process changes", "hidden":false},
+      {"type": "revert", "section":"Reverts", "hidden":false},
+      {"type": "feat", "section":"Features", "hidden":false},
+      {"type": "fix", "section":"BugFixes", "hidden":false},
+      {"type": "improvement", "section":"FeatureImprovements", "hidden":false},
+      {"type": "docs", "section":"Docs", "hidden":false},
+      {"type": "style", "section":"Styling", "hidden":false},
+      {"type": "refactor", "section":"CodeRefactoring", "hidden":false},
+      {"type": "perf", "section":"PerformanceImprovements", "hidden":false},
+      {"type": "test", "section":"Tests", "hidden":false},
+      {"type": "build", "section":"BuildSystem", "hidden":false},
+      {"type": "ci", "section": "CI", "hidden":false},
+      {"type": "quality", "section": "Qualityfixes", "hidden":false}
+  ],
+  "compareUrlFormat":  "https://BITBUCKET_URL/projects/{{owner}}/repos/{{repository}}/compare/diff?targetBranch=refs%2Ftags%2F{{previousTag}}&sourceBranch=refs%2Ftags%2F{{currentTag}}",
+  "issueUrlFormat": "https://JIRA_URL/browse/{{id}}",
+  "commitUrlFormat": "https://BITBUCKET_URL/projects/{{owner}}/repos/{{repository}}/commits/{{hash}}",
+  "skip": {
+    "commit": true,
+    "tag": true
   }
-  
-
+}
